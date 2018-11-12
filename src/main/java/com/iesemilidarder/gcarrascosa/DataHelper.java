@@ -6,9 +6,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class DataHelper {
+
     public static List<Product> items = new ArrayList<Product>();
-
-    List<Product>
-
-
 }

@@ -2,8 +2,10 @@ package com.iesemilidarder.gcarrascosa.data.controller;
 
 
 import com.iesemilidarder.gcarrascosa.DataHelper;
+import com.iesemilidarder.gcarrascosa.data.Activity;
 import com.iesemilidarder.gcarrascosa.data.Product;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
@@ -12,8 +14,18 @@ import java.util.List;
 public class Controller {
 
     @RequestMapping("/getAll")
-    public List<Product> get(){
-        List<Product> items = DataHelper.getData;
-        return items;
+        public List<Product> getAll() {
+
+        return DataHelper.items;
     }
+
+   /* @RequestMapping("/activity") {
+        public Activity getActivity(@RequestParam(value = "name", defaultValue = "World")String activityKind){
+        Activity activity = new Activity();
+        Activity.setActivityKind("activityKind");
+        DataHelper.items.add(activity);
+        return activity;
+        }
+    }*/
 }
+
